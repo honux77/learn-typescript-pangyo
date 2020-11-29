@@ -7,7 +7,7 @@ class Monster {
     constructor(name:string, hp:number, power:number) {
         this.name = name;
         this.hp = hp;
-        this.power 
+        this.power = power;
     }
 }
 

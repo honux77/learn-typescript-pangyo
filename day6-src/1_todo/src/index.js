@@ -24,12 +24,15 @@ function findIndexById(id) {
     return -1;
 }
 function addTodo(todo) {
+    console.log("Add Todo " + todo.id + " " + todo.title);
     todoItems.push(todo);
 }
 function deleteTodo(id) {
+    console.log("Delete Todo ID: " + id);
     todoItems.splice(findIndexById(id), 1);
 }
 function completeTodo(id) {
+    console.log("Complete Todo ID: " + id);
     getItemById(id).done = true;
 }
 // business logic
@@ -51,6 +54,7 @@ todoItems = fetchTodos();
 addTwoTodoItems();
 console.log(getItemById(10));
 completeTodo(10);
+completeTodo(11);
 console.log(showCompleted());
 deleteTodo(10);
 log();

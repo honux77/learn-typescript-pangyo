@@ -34,14 +34,17 @@ function findIndexById(id: number): number {
 }
 
 function addTodo(todo: Item) {
+  console.log(`Add Todo ${todo.id} ${todo.title}`);
   todoItems.push(todo);
 }
 
 function deleteTodo(id: number) {
+  console.log(`Delete Todo ID: ${id}`);
   todoItems.splice(findIndexById(id), 1);
 }
 
 function completeTodo(id: number): void {
+  console.log(`Complete Todo ID: ${id}`);
   getItemById(id).done = true;
 }
 

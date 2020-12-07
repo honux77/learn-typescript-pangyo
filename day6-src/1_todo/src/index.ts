@@ -1,7 +1,13 @@
-let todoItems: { id: number; title: string; done: boolean }[];
+class item {
+  id: number
+  title: string
+  done: boolean
+}
+
+let todoItems: item[];
 
 // api
-function fetchTodoItems(): any {
+function fetchTodoItems(): item[] {
   const todos = [
     { id: 1, title: "안녕", done: false },
     { id: 2, title: "타입", done: false },
@@ -11,12 +17,12 @@ function fetchTodoItems(): any {
 }
 
 // crud methods
-function fetchTodos() {
+function fetchTodos(): item[] {
   const todos = fetchTodoItems();
   return todos;
 }
 
-function addTodo(todo: { id: number; title: string; done: boolean }) {
+function addTodo(todo: item) {
   todoItems.push(todo);
 }
 
@@ -26,7 +32,7 @@ function deleteTodo(index: number) {
 
 function completeTodo(
   index: number,
-  todo: { id: number; title: string; done: boolean }
+  todo: item
 ): void {
   todo.done = true;
   todoItems.splice(index, 1, todo);

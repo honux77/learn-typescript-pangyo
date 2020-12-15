@@ -9,8 +9,12 @@ class Dog {
         Dog.numTail = 1;
     }
 
-    hi() {
-      console.log(`Hello ${this.name}: ${this.age} ${Dog.numTail}`);  
+    hi(): void {
+      console.log(`Hello I am ${this.name} and I am ${this.age} years old`);  
+    }
+
+    static wow(): void {
+        console.log(`We are Dogs and We have ${Dog.numTail} tail(s)!`);
     }
 }
 
@@ -22,4 +26,5 @@ const d1 = new Dog('Nabi', 3);
 const d2 = new Dog('Zelda', 10);
 
 foo(d1);
-foo(d2);
+d2.hi();
+Dog.wow();

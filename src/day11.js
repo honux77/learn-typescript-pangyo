@@ -5,7 +5,10 @@ var Dog = (function () {
         Dog.numTail = 1;
     }
     Dog.prototype.hi = function () {
-        console.log("Hello " + this.name + ": " + this.age + " " + Dog.numTail);
+        console.log("Hello I am " + this.name + " and I am " + this.age + " years old");
+    };
+    Dog.wow = function () {
+        console.log("We are Dogs and We have " + Dog.numTail + " tail(s)!");
     };
     return Dog;
 })();
@@ -15,4 +18,5 @@ function foo(d) {
 var d1 = new Dog('Nabi', 3);
 var d2 = new Dog('Zelda', 10);
 foo(d1);
-foo(d2);
+d2.hi();
+Dog.wow();

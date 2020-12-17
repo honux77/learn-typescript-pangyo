@@ -1,4 +1,4 @@
-# Learn TS Day 12 Generic
+# Learn TS Day 12, 13 Generic
 
 ## Generic
 

@@ -29,3 +29,9 @@ emails.forEach(function (email: Item<string>) {
   const selectTag = document.querySelector("#email-dropdown");
   selectTag.appendChild(item);
 });
+
+numberOfProducts.forEach(function (numProduct: Item<number>) {
+  const item = createDropdownItem<number>(numProduct);
+  const selectTag = document.querySelector("#product-dropdown");
+  selectTag.appendChild(item);
+});

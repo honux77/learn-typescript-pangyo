@@ -23,7 +23,8 @@ tsconfig.json을 만들자
         "checkJs": true,
         "noImplicitAny": true
     }
-}```
+}
+```
 
 ## 참고자료
 

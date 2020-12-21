@@ -41,7 +41,7 @@ function fetchContacts() {
         },
     ];
     return new Promise(function (resolve) {
-        setTimeout(function () { return resolve(contacts); }, 2000);
+        setTimeout(function () { return resolve(contacts); }, 800);
     });
 }
 // main
@@ -79,4 +79,4 @@ var AddressBook = /** @class */ (function () {
 var book = new AddressBook();
 setTimeout(function () {
     console.log(book.findContactByPhone(11122223333, PhoneType.Home));
-}, 5000);
+}, 1000);

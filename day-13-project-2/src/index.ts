@@ -53,7 +53,7 @@ function fetchContacts(): Promise<Contact[]> {
     },
   ];
   return new Promise(resolve => {
-    setTimeout(() => resolve(contacts), 2000);
+    setTimeout(() => resolve(contacts), 800);
   });
 }
 
@@ -99,6 +99,6 @@ class AddressBook {
 }
 
 const book = new AddressBook();
-setTimeout(()=> {
+setTimeout(() => {
   console.log(book.findContactByPhone(11122223333, PhoneType.Home));
-}, 5000);
+}, 1000);

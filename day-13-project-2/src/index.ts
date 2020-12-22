@@ -99,6 +99,9 @@ class AddressBook {
 }
 
 const book = new AddressBook();
+
 setTimeout(() => {
-  console.log(book.findContactByPhone(11122223333, PhoneType.Home));
+  let tony = book.findContactByPhone(11122223333, PhoneType.Home);
+  let app = document.querySelector("#app") as HTMLDivElement;
+  app.innerHTML = JSON.stringify(tony);
 }, 1000);

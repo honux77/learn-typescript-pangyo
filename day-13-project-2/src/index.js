@@ -78,5 +78,7 @@ var AddressBook = /** @class */ (function () {
 }());
 var book = new AddressBook();
 setTimeout(function () {
-    console.log(book.findContactByPhone(11122223333, PhoneType.Home));
+    var tony = book.findContactByPhone(11122223333, PhoneType.Home);
+    var app = document.querySelector("#app");
+    app.innerHTML = JSON.stringify(tony);
 }, 1000);

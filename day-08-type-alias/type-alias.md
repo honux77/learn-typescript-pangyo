@@ -21,5 +21,3 @@ const honux: Man = {
 };
 
 ```
-
-

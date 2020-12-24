@@ -1,14 +1,11 @@
-var PhoneType;
-(function (PhoneType) {
-    PhoneType["Home"] = "home";
-    PhoneType["Office"] = "office";
-    PhoneType["Studio"] = "studio";
-})(PhoneType || (PhoneType = {}));
+"use strict";
+exports.__esModule = true;
+var types_1 = require("./types");
 function fetchContacts() {
     var contacts = [
         {
-            name: 'Tony',
-            address: 'Malibu',
+            name: "Tony",
+            address: "Malibu",
             phones: {
                 home: {
                     num: 11122223333
@@ -19,8 +16,8 @@ function fetchContacts() {
             }
         },
         {
-            name: 'Banner',
-            address: 'New York',
+            name: "Banner",
+            address: "New York",
             phones: {
                 home: {
                     num: 77788889999
@@ -28,8 +25,8 @@ function fetchContacts() {
             }
         },
         {
-            name: '마동석',
-            address: '서울시 강남구',
+            name: "마동석",
+            address: "서울시 강남구",
             phones: {
                 home: {
                     num: 213423452
@@ -78,7 +75,7 @@ var AddressBook = /** @class */ (function () {
 }());
 var book = new AddressBook();
 setTimeout(function () {
-    var tony = book.findContactByPhone(11122223333, PhoneType.Home);
+    var tony = book.findContactByPhone(11122223333, types_1.PhoneType.Home);
     var app = document.querySelector("#app");
     app.innerHTML = JSON.stringify(tony);
 }, 1000);

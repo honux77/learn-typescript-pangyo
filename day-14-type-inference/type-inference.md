@@ -43,6 +43,3 @@ const a3 = [1, 2, true, 'hello'];
 - https://code.visualstudio.com/api/language-extensions/language-server-extension-guide
 - https://langserver.org/
 - https://docs.microsoft.com/ko-kr/visualstudio/extensibility/language-server-protocol?view=vs-2019
-
-
-

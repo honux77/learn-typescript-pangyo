@@ -4,14 +4,16 @@
     };
   }
   
-  export enum PhoneType {
+  enum PhoneType {
     Home = 'home',
     Office = 'office',
     Studio = 'studio'
   }
   
-  export interface Contact {
+  interface Contact {
     name: string;
     address: string;
     phones: PhoneNumberDictionary;
   }
+
+  export {PhoneType, Contact}

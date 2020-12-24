@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "checkJs": true,
-    "target": "es5",
-    "lib": ["es2015", "dom", "dom.iterable"],
-    "noImplicitAny": true,
     "strict": true,
-    "strictFunctionTypes": true
-  },
-  "include": ["./src/**/*"]
+    "module": "commonjs",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "rootDir": "src",
+    "moduleResolution": "node"
+  }
 }

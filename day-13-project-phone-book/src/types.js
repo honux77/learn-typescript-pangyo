@@ -6,4 +6,5 @@ var PhoneType;
     PhoneType["Home"] = "home";
     PhoneType["Office"] = "office";
     PhoneType["Studio"] = "studio";
-})(PhoneType = exports.PhoneType || (exports.PhoneType = {}));
+})(PhoneType || (PhoneType = {}));
+exports.PhoneType = PhoneType;

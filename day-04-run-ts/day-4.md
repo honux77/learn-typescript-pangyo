@@ -57,3 +57,7 @@ monsters.push(new Monster('Pang', 100, 5));
 monsters.push(new Monster('Yul', 150, 4));
 console.dir(monsters);
 ```
+
+## 체크포인트
+
+- tsc로 컴파일하면 생성되는 js 파일도 꼭 읽어보자. 공부에 큰 도움이 된다.

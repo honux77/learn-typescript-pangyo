@@ -2,6 +2,8 @@
 
 ## 타입 기초
 
+- <https://joshua1988.github.io/ts/guide/basic-types.html>
+
 ```ts
 let str: string = "hello";
 let arr: Array<number> = [1, 2, ,3];

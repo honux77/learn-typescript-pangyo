@@ -2,7 +2,10 @@
 
 ## enum
 
-```
+- 자바의 그것과 비슷하다.
+- 간단하면서도 유용할 것 같다.
+
+```ts
 enum Menu {
   beefSoup,
   chikenSoup,

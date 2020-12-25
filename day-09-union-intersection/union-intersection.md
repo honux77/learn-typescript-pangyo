@@ -1,4 +1,4 @@
-# Learn TS day 9
+# Learn TS day 9 union 과 intersection
 
 ## Union type
 

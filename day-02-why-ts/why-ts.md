@@ -7,3 +7,9 @@
 
 - axios를 사용했음
 - promise로 받아서 처리하는구나. 난 async await이 더 좋은데 브라우저에서는 안 되는 걸까?
+
+## 참고 문서
+
+- https://github.com/axios/axios
+- https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
+- https://jsonplaceholder.typicode.com/

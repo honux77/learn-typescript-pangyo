@@ -39,9 +39,10 @@ console.log(user.__proto__.__proto__ === null); //null
 
 ## TS 클래스
 
-JS보다 조금 더 클래스스럽다. 좋군!
+- JS보다 조금 더 클래스스럽다. 좋군!
+- 보통은 클래스보다 인터페이스를 더 많이 사용하는 느낌이 든다.
 
-```
+```ts
 class Dog {
     public name: string;
     private age: number;
